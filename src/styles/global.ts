@@ -4,6 +4,7 @@ export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+
     outline: transparent;
     box-sizing: border-box;
   }
@@ -28,8 +29,8 @@ export const GlobalStyles = createGlobalStyle`
   html,
   body,
   #root {
-    width: 100%;
     height: 100%;
+    width: 100%;
 
     font-size: 1.5rem;
 
