@@ -22,38 +22,52 @@
     "order/properties-order": [
       [
         {
-          "emptyLineBefore": "threshold",
+          "groupName": "dimensions",
+          "emptyLineBefore": "always",
           "noEmptyLineBetween": true,
-          "properties": ["width", "height"]
+          "properties": [
+            "height",
+            "width",
+            "min-height",
+            "min-width",
+            "max-height",
+            "max-width"
+          ]
         },
         {
+          "groupName": "appearance",
           "emptyLineBefore": "always",
           "noEmptyLineBetween": true,
           "properties": [
             "border",
-            "border-radius",
             "border-color",
             "border-top",
             "border-right",
             "border-bottom",
             "border-left",
-            "background"
+            "border-radius",
+            "background",
+            "background-color",
+            "background-image"
           ]
         },
         {
+          "groupName": "font",
           "emptyLineBefore": "always",
           "noEmptyLineBetween": true,
           "properties": [
             "color",
+            "font",
             "font-size",
             "font-weight",
-            "font-family",
             "text-align",
             "text-decoration",
-            "text-transform"
+            "text-transform",
+            "line-height"
           ]
         },
         {
+          "groupName": "spacings",
           "emptyLineBefore": "always",
           "noEmptyLineBetween": true,
           "properties": [
@@ -66,10 +80,13 @@
             "padding-top",
             "padding-right",
             "padding-bottom",
-            "padding-left"
+            "padding-left",
+            "padding-inline-start",
+            "padding-inline-end"
           ]
         },
         {
+          "groupName": "positioning",
           "emptyLineBefore": "always",
           "noEmptyLineBetween": true,
           "properties": [
@@ -81,25 +98,43 @@
           ]
         },
         {
+          "groupName": "animations",
           "emptyLineBefore": "always",
           "noEmptyLineBetween": true,
-          "properties": ["transform"]
+          "properties": [
+            "transition"
+          ]
         },
         {
+          "groupName": "displaying",
           "emptyLineBefore": "always",
           "noEmptyLineBetween": true,
-          "properties": ["display", "align-items", "justify-content"]
+          "properties": [
+            "display",
+            "flex",
+            "gap",
+            "grid-template-columns",
+            "grid-template-rows",
+            "align-items",
+            "align-self",
+            "flex-direction",
+            "justify-content",
+            "justify-self"
+          ]
         },
         {
+          "groupName": "index",
           "emptyLineBefore": "always",
           "noEmptyLineBetween": true,
-          "properties": ["z-index"]
+          "properties": [
+            "z-index"
+          ]
         }
       ],
       {
         "unspecified": "bottom",
         "emptyLineBeforeUnspecified": "threshold",
-        "emptyLineMinimumPropertyThreshold": 5
+        "emptyLineMinimumPropertyThreshold": 4
       }
     ]
   }
