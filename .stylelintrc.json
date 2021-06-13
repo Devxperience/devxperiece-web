@@ -1,0 +1,106 @@
+{
+  "plugins": [
+    "stylelint-order"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ],
+  "syntax": "css-in-js",
+  "rules": {
+    "value-keyword-case": null,
+    "no-eol-whitespace": [true, { "ignore": ["empty-lines"] }],
+    "declaration-empty-line-before": null,
+    "color-hex-case": "lower",
+    "font-weight-notation": ["numeric", { "ignore": ["relative"] }],
+    "declaration-no-important": true,
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": [
+      [
+        {
+          "emptyLineBefore": "threshold",
+          "noEmptyLineBetween": true,
+          "properties": ["width", "height"]
+        },
+        {
+          "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
+          "properties": [
+            "border",
+            "border-radius",
+            "border-color",
+            "border-top",
+            "border-right",
+            "border-bottom",
+            "border-left",
+            "background"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
+          "properties": [
+            "color",
+            "font-size",
+            "font-weight",
+            "font-family",
+            "text-align",
+            "text-decoration",
+            "text-transform"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
+          "properties": [
+            "margin",
+            "margin-top",
+            "margin-right",
+            "margin-bottom",
+            "margin-left",
+            "padding",
+            "padding-top",
+            "padding-right",
+            "padding-bottom",
+            "padding-left"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
+          "properties": [
+            "position",
+            "top",
+            "right",
+            "bottom",
+            "left"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
+          "properties": ["transform"]
+        },
+        {
+          "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
+          "properties": ["display", "align-items", "justify-content"]
+        },
+        {
+          "emptyLineBefore": "always",
+          "noEmptyLineBetween": true,
+          "properties": ["z-index"]
+        }
+      ],
+      {
+        "unspecified": "bottom",
+        "emptyLineBeforeUnspecified": "threshold",
+        "emptyLineMinimumPropertyThreshold": 5
+      }
+    ]
+  }
+}
